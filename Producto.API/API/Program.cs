@@ -25,6 +25,10 @@ builder.Services.AddScoped<IRepositorioDapper, RepositorioDapper>();
 builder.Services.AddScoped<ITipoCambioServicio, TipoCambioServicio>();
 builder.Services.AddScoped<IConfiguracion, Configuracion>();
 builder.Services.AddScoped<IProductoReglas, ProductoReglas>();
+builder.Services.AddScoped<ISubCategoriaFlujo, SubCategoriaFlujo>();
+builder.Services.AddScoped<ISubCategoriaDA, SubCategoriaDA>();
+builder.Services.AddScoped<ICategoriaFlujo, CategoriaFlujo>();
+builder.Services.AddScoped<ICategoriaDA, CategoriaDA>();
 
 var app = builder.Build();
 
